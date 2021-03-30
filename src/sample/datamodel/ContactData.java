@@ -39,7 +39,6 @@ public class ContactData {
     public ObservableList<Contact> getContacts() {
         return contacts;
     }
-
     public void addContact(Contact item){ contacts.add(item); }
 
     public void deleteContact(Contact item){
