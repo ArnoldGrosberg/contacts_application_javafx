@@ -11,6 +11,7 @@ public class Contact {
     public Contact(){
 
     }
+
     public Contact(String firstName, String lastName, String phoneNumber, String notes){
         this.firstName.set(firstName);
         this.lastName.set(lastName);

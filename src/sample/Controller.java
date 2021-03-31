@@ -30,7 +30,7 @@ public class Controller {
     }
 
     @FXML
-    public void showAddContactDialog() {
+    public void showAddContactDialog() throws IOException {
         Dialog<ButtonType> dialog = new Dialog<ButtonType>();
         dialog.initOwner(mainPanel.getScene().getWindow());
         dialog.setTitle("Add New Contact");
@@ -43,11 +43,11 @@ public class Controller {
             e.printStackTrace();
             return;
         }
+
         dialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
         dialog.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
 
         Optional<ButtonType> result = dialog.showAndWait();
-
         if(result.isPresent() && result.get() == ButtonType.OK){
             ContactController contactController = fxmlLoader.getController();
             Contact newContact = contactController.getNewContact();
