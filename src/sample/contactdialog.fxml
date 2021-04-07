@@ -1,11 +1,14 @@
+<!-- // required imports-->
 <?import javafx.scene.control.DialogPane ?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <DialogPane fx:controller="sample.ContactController" xmlns:fx="http://javafx.com/fxml">
+    <!-- header text-->
     <headerText>
             Fill in the information for the new Contact
     </headerText>>
+    <!-- text and it's alignment with ids-->
     <content>
         <GridPane vgap="10" hgap="10">
             <Label text="First Name: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>

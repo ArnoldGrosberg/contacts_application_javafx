@@ -1,3 +1,4 @@
+<!-- imports -->
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
 
@@ -14,6 +15,7 @@
     <top>
         <MenuBar>
             <menus>
+                <!-- menu text, button text and action -->
                 <Menu text="Contacts">
                     <items>
                         <MenuItem text="Add" onAction="#showAddContactDialog"/>
@@ -30,10 +32,12 @@
     </top>
     <center>
         <TableView fx:id="contactsTable">
+            <!-- constrained resize policy to resize the window -->
             <columnResizePolicy>
                 <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
             </columnResizePolicy>
             <columns>
+                <!-- columns with names -->
                 <TableColumn text="First Name">
                     <cellValueFactory>
                         <PropertyValueFactory property="firstName"/>
