@@ -1,6 +1,6 @@
 package sample;
 
-
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
@@ -30,7 +30,7 @@ public class Controller {
     }
 
     @FXML
-    public void showAddContactDialog() throws IOException {
+    public void showAddContactDialog() {
         Dialog<ButtonType> dialog = new Dialog<ButtonType>();
         dialog.initOwner(mainPanel.getScene().getWindow());
         dialog.setTitle("Add New Contact");
