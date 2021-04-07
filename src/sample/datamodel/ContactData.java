@@ -1,5 +1,5 @@
-package sample.datamodel;
-
+package sample.datamodel; // required package
+// required imports
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -19,9 +19,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 
-
+// public class for ContactData and it's methods, variables
 public class ContactData {
-
+    // variables
     private static final String CONTACTS_FILE = "contacts.xml";
 
     private static final String CONTACT = "contact";
@@ -31,23 +31,23 @@ public class ContactData {
     private static final String NOTES = "notes";
 
     private ObservableList<Contact> contacts;
-
+    // method with observable list to read the data
     public ContactData() {
         contacts = FXCollections.observableArrayList();
     }
-
+    // getter
     public ObservableList<Contact> getContacts() {
         return contacts;
     }
-
+    // method to add a contact
     public void addContact(Contact item){
         contacts.add(item);
     }
-
+    // method to delete a contact
     public void deleteContact(Contact item){
         contacts.remove(item);
     }
-
+    // method to load contacts
     public void loadContacts() {
         try {
             // First, create a new XMLInputFactory

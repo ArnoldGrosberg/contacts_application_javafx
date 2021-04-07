@@ -1,5 +1,5 @@
-package sample;
-
+package sample;// required package
+// required imports
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,8 +13,9 @@ import sample.datamodel.ContactData;
 
 import java.io.IOException;
 import java.util.Optional;
-
+// public class for Controller and it's methods, variables
 public class Controller {
+    // variables
     @FXML
     private BorderPane mainPanel;
 
@@ -22,13 +23,13 @@ public class Controller {
     private TableView<Contact> contactsTable;
 
     private ContactData data;
-
+    // method to load contacts
     public void initialize(){
         data = new ContactData();
         data.loadContacts();
         contactsTable.setItems(data.getContacts());
     }
-
+    // method to add contacts
     @FXML
     public void showAddContactDialog() {
         Dialog<ButtonType> dialog = new Dialog<ButtonType>();
@@ -43,10 +44,10 @@ public class Controller {
             e.printStackTrace();
             return;
         }
-
+        // buttons
         dialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
         dialog.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
-
+        // shows the buttons and results
         Optional<ButtonType> result = dialog.showAndWait();
         if(result.isPresent() && result.get() == ButtonType.OK){
             ContactController contactController = fxmlLoader.getController();
@@ -55,6 +56,7 @@ public class Controller {
             data.saveContacts();
         }
     }
+    // method to edit contacts
     @FXML
     public void showEditContactDialog() {
         Contact selectedContact = contactsTable.getSelectionModel().getSelectedItem();
@@ -78,12 +80,13 @@ public class Controller {
             e.printStackTrace();
             return;
         }
+        // buttons
         dialog.getDialogPane().getButtonTypes().add(ButtonType.OK);
         dialog.getDialogPane().getButtonTypes().add(ButtonType.CANCEL);
-
+        // gets and edits the contact
         ContactController contactController = fxmlLoader.getController();
         contactController.editContact(selectedContact);
-
+        // updates and shows result
         Optional<ButtonType> result = dialog.showAndWait();
         if(result.isPresent() && result.get() == ButtonType.OK){
             contactController.updateContact(selectedContact);
@@ -91,7 +94,7 @@ public class Controller {
         }
 
     }
-
+        // method to delete contacts
     public void showDeleteContactDialog() {
         Contact selectedContact = contactsTable.getSelectionModel().getSelectedItem();
         if(selectedContact == null){

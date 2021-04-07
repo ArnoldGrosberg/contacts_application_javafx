@@ -1,8 +1,9 @@
-package sample.datamodel;
-
+package sample.datamodel;// required package
+// required imports
 import javafx.beans.property.SimpleStringProperty;
-
+// public class for Contact and it's methods, variables
 public class Contact {
+    // private variables
     private SimpleStringProperty firstName = new SimpleStringProperty("");
     private SimpleStringProperty lastName = new SimpleStringProperty("");
     private SimpleStringProperty phoneNumber = new SimpleStringProperty("");
@@ -11,14 +12,14 @@ public class Contact {
     public Contact(){
 
     }
-
+    // Contact method to set variables
     public Contact(String firstName, String lastName, String phoneNumber, String notes){
         this.firstName.set(firstName);
         this.lastName.set(lastName);
         this.phoneNumber.set(phoneNumber);
         this.notes.set(notes);
     }
-
+    // getters and setters
     public String getFirstName() {
         return firstName.get();
     }
@@ -66,7 +67,7 @@ public class Contact {
     public void setNotes(String notes) {
         this.notes.set(notes);
     }
-
+    // override to display the values
     @Override
     public String toString() {
         return "Contact{" +
