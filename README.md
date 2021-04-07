@@ -40,6 +40,7 @@ I use Github for versioning. It's at the same directory as this README.md file.
 ## Authors
 
 * **Anna Karutina** - *Initial work* - [AnnaKarutina](https://github.com/AnnaKarutina/)
+* **Arnold Grosberg** - *Documentation work* - [ArnoldITA20](https://github.com/ArnoldITA20/)
 
 
 ## License
