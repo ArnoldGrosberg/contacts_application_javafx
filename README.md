@@ -1,87 +1,51 @@
-# Project Title
+# Project Contacts app
 
-One Paragraph of project description goes here
+Simple contacts app which adds, edits and deletes contacts.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Copy the project and make sure that every file is in datamodel folder.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+This project is written in Java 11 jdk so install that. And uses JavaFX library so install JavaFX library and add it to the project.
 
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+Copy the files to a datamodel folder and install Java 11 jdk and add JavaFX library to the project structure.
 
 ## Running the tests
+This test is to make sure that everything is installed and the app works correctly.
+Run the Main file in a Java IDE and if everything is correctly done the Contacts app window will come up.
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
+Run the Main file in a Java IDE to deploy it.
 
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [JavaFX](https://openjfx.io/) - The library used
+* [Java 11 jdk](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html) - The Java version used
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+The app is final and there is no need to contribute anything.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+I use Github for versioning. It's at the same directory as this README.md file.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Anna Karutina** - *Initial work* - [AnnaKarutina](https://github.com/AnnaKarutina/)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+None.
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Used for learning purposes.
