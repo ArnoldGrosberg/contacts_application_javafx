@@ -13,7 +13,7 @@ This project is written in Java 11 jdk so install that. And uses JavaFX library 
 
 ### Installing
 
-Copy the files to a datamodel folder and install Java 11 jdk and add JavaFX library to the project structure.
+Copy Main, main.fxml, Controller, contactdialog.fxml, ContactController to a folder named "sample" and Contact, ContactData to a folder which is inside sample and named "datamodel". Install Java 11 jdk and add JavaFX library to the project structure.
 
 ## Running the tests
 This test is to make sure that everything is installed and the app works correctly.
